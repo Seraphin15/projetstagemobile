@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'publier_produit_page.dart';
+import 'accueil_produit_page.dart';
 
 class ProducteurPage extends StatefulWidget {
   @override
@@ -10,7 +11,7 @@ class _ProducteurPageState extends State<ProducteurPage> {
   int _selectedIndex = 0;
 
   final List<Widget> _pages = [
-    Center(child: Text('🏠 Accueil')),
+    AccueilPage(),
     PublierProduitPage(),
     Center(child: Text('🔔 Notifications')),
     Center(child: Text('💬 Messages')),
